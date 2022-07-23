@@ -4,6 +4,9 @@
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --logo-main-color: #000000;
+  --footer-background-color: #2f303a;
+  --portfolio-background-color: #f5f5f5;
+  --filter-button-color: #f5f4fa;
 }
 
 body {
@@ -38,7 +41,12 @@ span {
   color: var(--accent-color);
 }
 
+.footer {
+  background-color: var(--footer-background-color);
+}
+
 .footer-contacts {
+  color: var(--background-color);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -76,6 +84,7 @@ span {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /*.benefits-title - to be used to hide the title of the section*/
@@ -112,19 +121,23 @@ span {
 
 /*.benefits-title - to be used to hide the title of the section*/
 
-.filter-buttons {
+.filter.button {
+  background-color: var(--filter-button-color);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 }
 
-.filter-buttons li :hover,
-.filter-buttons li :focus {
+.filter.button li :hover,
+.filter.button li :focus {
   background-color: var(--accent-color);
   color: #fff;
 }
 
+.portfolio {
+  background-color: var(--portfolio-background-color);
+}
 .portfolio h2 {
   color: var(--title-text-color);
   font-weight: 700;

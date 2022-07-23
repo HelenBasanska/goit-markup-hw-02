@@ -1,0 +1,147 @@
+:root {
+  --background-color: #fff;
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --logo-main-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--logo-main-color);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+span {
+  color: var(--accent-color);
+}
+
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus {
+  color: var(--accent-color);
+}
+
+.footer-contacts {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+/*.benefits-title - to be used to hide the title of the section*/
+
+.benefits h3 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.benefits p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team {
+  background: #f5f4fa;
+}
+
+.team h3 {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/*.benefits-title - to be used to hide the title of the section*/
+
+.filter-buttons {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.filter-buttons li :hover,
+.filter-buttons li :focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.portfolio h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio p {
+  color: var(--primary-text-color);
+  line-height: 1.9;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

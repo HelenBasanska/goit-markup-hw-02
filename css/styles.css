@@ -21,13 +21,13 @@ body {
 
 .logo {
   font-family: Raleway, sans-serif;
-  color: var(--logo-main-color);
+  color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
 }
 
-span {
-  color: var(--accent-color);
+.logo-header span {
+  color: var(--logo-main-color);
 }
 
 .header-contacts {
@@ -41,7 +41,7 @@ span {
   color: var(--accent-color);
 }
 
-.footer {
+footer {
   background-color: var(--footer-background-color);
 }
 
@@ -51,19 +51,25 @@ span {
   line-height: 1.7;
 }
 
+.logo-footer span {
+  color: var(--background-color);
+}
+
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   color: var(--accent-color);
 }
 
-.site-nav {
+.site-nav a {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
 }
 
 .site-nav a:hover,
-.site-nav a:focus {
+.site-nav a:focus,
+.site-nav a:active {
   color: var(--accent-color);
 }
 
@@ -85,6 +91,11 @@ span {
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+.order.button:hover,
+.order.button:active {
+  background-color: #188ce8;
 }
 
 /*.benefits-title - to be used to hide the title of the section*/

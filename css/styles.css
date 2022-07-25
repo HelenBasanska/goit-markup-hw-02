@@ -5,15 +5,14 @@
   --accent-color: #2196f3;
   --logo-main-color: #000000;
   --footer-background-color: #2f303a;
-  --portfolio-background-color: #f5f5f5;
   --filter-button-color: #f5f4fa;
+  --button-active-color: #188ce8;
 }
 
 body {
   background-color: var(--background-color);
-  color: #757575;
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -30,7 +29,8 @@ body {
   color: var(--logo-main-color);
 }
 
-.header-contacts {
+.header-contacts a {
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -46,13 +46,21 @@ footer {
 }
 
 .footer-contacts {
-  color: var(--background-color);
-
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
 }
 
+.footer-contacts a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts .footer-address {
+  color: var(--background-color);
+}
+
 .logo-footer {
+  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -75,13 +83,15 @@ footer {
 }
 
 .site-nav a:hover,
-.site-nav a:focus,
-.site-nav a:active {
+.site-nav a:focus {
   color: var(--accent-color);
 }
 
+.hero {
+  background-color: var(--footer-background-color);
+}
 .hero-title {
-  color: #fff;
+  color: var(--background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -92,7 +102,7 @@ footer {
 
 .button {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--background-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -102,10 +112,21 @@ footer {
 
 .order.button:hover,
 .order.button:active {
-  background-color: #188ce8;
+  background-color: var(--button-active-color);
 }
 
-/*.benefits-title - to be used to hide the title of the section*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .benefits h3 {
   color: var(--title-text-color);
@@ -126,9 +147,8 @@ footer {
   line-height: 1.2;
   text-align: center;
 }
-
 .team {
-  background: #f5f4fa;
+  background-color: var(--filter-button-color);
 }
 
 .team h3 {
@@ -137,9 +157,14 @@ footer {
   font-size: 16px;
 }
 
-/*.benefits-title - to be used to hide the title of the section*/
+.team li {
+  background-color: var(--background-color);
+}
 
 .filter.button {
+  background-color: var(--background-color);
+}
+.filter.button li {
   background-color: var(--filter-button-color);
   color: var(--title-text-color);
   font-weight: 500;
@@ -150,12 +175,10 @@ footer {
 .filter.button li :hover,
 .filter.button li :focus {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--background-color);
+  cursor: pointer;
 }
 
-.portfolio {
-  background-color: var(--portfolio-background-color);
-}
 .portfolio h2 {
   color: var(--title-text-color);
   font-weight: 700;
